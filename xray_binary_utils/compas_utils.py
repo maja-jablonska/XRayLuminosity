@@ -7,7 +7,7 @@ import plotly.express as px
 
 
 def run_compas(n_systems: int = 100):
-    os.system(f'COMPAS -n {n_systems} --detailed-output True')
+    os.system(f'COMPAS -n {n_systems} --detailed-output --evolve-unbound-systems')
     
 def remove_output():
     for f in glob.glob("COMPAS_Output*"):

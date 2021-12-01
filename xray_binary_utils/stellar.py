@@ -17,3 +17,15 @@ STELLAR_TYPES = {
     15: 'Massless Remnant',
     16: 'Chemically Homogenously Evolving'
 }
+
+
+def is_compact_object(type) -> bool:
+    return (type == 13) or (type == 14)
+
+
+def is_white_dwarf(type) -> bool:
+    return (type == 10) or (type == 11) or (type == 12)
+
+
+def is_main_sequence(type) -> bool:
+    return 0 <= type <= 9
