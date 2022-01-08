@@ -1,3 +1,4 @@
 COMPAS_Output/
 .ipynb_checkpoints/
 xray_binary_utils/__pycache__/
+*.gzip
